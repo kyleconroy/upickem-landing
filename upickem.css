@@ -1,0 +1,276 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+table.sortable span.sign {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    font-size: 12px;
+    margin-top: -10px;
+    color: #bfbfc1;
+}
+
+table.sortable span.arrow, span.reversed {
+    border-style: solid;
+    border-width: 5px;
+    font-size: 0;
+    border-color: #ccc transparent transparent transparent;
+    line-height: 0;
+    height: 0;
+    width: 0;
+    margin-top: -2px;
+}
+
+    table.sortable span.arrow.up {
+        border-color: transparent transparent #ccc transparent;
+        margin-top: -7px;
+    }
+
+table.sortable span.reversed {
+    border-color: transparent transparent #ccc transparent;
+    margin-top: -7px;
+}
+
+    table.sortable span.reversed.up {
+        border-color: #ccc transparent transparent transparent;
+        margin-top: -2px;
+    }
+
+td.place {
+  text-align: right;
+}
+
+.navbar {
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+
+#logotype, h1, h2, h3, h4, h5, h6 {
+}
+
+footer {
+  background: #eee;
+  padding: 20px 20px 0 20px;
+  margin-top: 30px;
+}
+
+table.sortable span.az:before {
+    content: "a .. z";
+}
+
+table.sortable span.az.up:before {
+    content: "z .. a";
+}
+
+table.sortable span.AZ:before {
+    content: "A .. Z";
+}
+
+table.sortable span.AZ.up:before {
+    content: "Z .. A";
+}
+
+table.sortable span._19:before {
+    content: "1 .. 9";
+}
+
+table.sortable span._19.up:before {
+    content: "9 .. 1";
+}
+
+table.sortable span.month:before {
+    content: "jan .. dec";
+}
+
+table.sortable span.month.up:before {
+    content: "dec .. jan";
+}
+
+table.sortable thead th:not([data-defaultsort=disabled]) {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+table.sortable thead th:hover:not([data-defaultsort=disabled]) {
+    background: #efefef;
+}
+
+table.sortable thead th div.mozilla {
+    position: relative;
+}
+
+
+.post-body > p:last-child {
+  margin: 0px
+}
+
+.post-body img {
+  max-width: 100%;
+}
+
+.media .icon {
+  font-size: 32px;
+}
+
+#heroshot {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #0f0c11;
+  background-image: url('images/stadium.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+#lockout {
+  color: #FFF;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #0f0c11;
+  background-image: url('../images/lockdown.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+#lockout h2 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+#dashboardshot {
+  display: block;
+  color: #FFF;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #0f0c11;
+  background-image: url('../images/dashboard.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+#dashboardshot h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.slimlead {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+#payment {
+  padding-bottom: 0;
+}
+
+#payment:after {
+    clear: both;
+}
+
+#payment:before, #payment:after {
+    display: table;
+    content: " ";
+}
+
+#payment .btn {
+  margin-bottom: 15px;
+}
+
+#search {
+  margin-top: 20px;
+}
+
+#updates {
+  margin-bottom: 10px;
+}
+
+#current_item img {
+  max-width: 100%;
+}
+
+.roster-section ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.roster-section ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.search-group {
+  margin-top: 20px;
+}
+
+.random {
+  width: 100%;
+}
+
+#about h2 {
+  border-bottom: 3px solid #49be53;
+}
+
+@media (min-width: 768px) {
+  .roster-section ul li { width: 32%; }
+}
+
+@media (min-width: 992px) {
+  .roster-section ul li { width: 24%; }
+}
+
+.stats-tip {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+  text-align: left;
+}
+
+.flair-blue {
+  background-color: blue;
+}
+
+.flair-gold {
+  background-color: gold;
+}
+
+.flair-silver {
+  background-color: silver;
+}
+
+.flair-bronze {
+  background-color: bronze;
+}
+
+.flair-metal {
+  background-color: grey;
+}
+
+@media print {
+  .navbar, .alert, footer, .submit {
+    display: none;
+  }
+  .roster-section {
+    font-size: 10px;
+  }
+}
+
